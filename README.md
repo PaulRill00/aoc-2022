@@ -1,5 +1,5 @@
 # Running the project
 
 ```
-$ yarn tsnd --respawn .\day-x\main.ts
+$ yarn nodemon --watch './**/*.ts' --exec 'node --experimental-specifier-resolution=node --loader ts-node/esm' .\src\day-x\main.ts
 ```
